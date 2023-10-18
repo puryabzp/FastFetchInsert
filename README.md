@@ -23,7 +23,7 @@ In this code, we combine the power of Requests_Futures and Prefect to fetch data
 Before using this code, make sure you have the following installed:
 
 - Python 3.x
-- The required Python libraries (install them using `pip`):
+- The required Python libraries (install them using `pipenv`):
   - asyncpg
   - prefect
   - requests-futures
@@ -54,20 +54,6 @@ Before using this code, make sure you have the following installed:
 
 6. **Review Data**:
    - After running the script, the data will be fetched and inserted into the database.
-
-## How It Works
-
-1. The script starts by reading configuration settings from `conf.json`, which contains database and API information.
-
-2. It uses Requests_Futures to make an asynchronous HTTP request to the specified API and fetches data.
-
-3. The fetched data is logged, including the time it took to retrieve the data and the number of records received.
-
-4. The fetched data is then inserted into a database using the asyncpg library. The insertion time and the number of records inserted are logged.
-
-5. The code is organized into Prefect tasks, allowing for easy orchestration and monitoring of the workflow.
-
-6. After running the script, you can review the logs to track the data fetching and insertion process.
 
 ## How It Handles Large Data
 
