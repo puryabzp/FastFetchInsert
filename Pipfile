@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 prefect = "*"
 requests-futures = "*"
-psycopg2-binary = "*"
+asyncpg = "*"
 
 [dev-packages]
 
